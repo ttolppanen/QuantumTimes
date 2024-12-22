@@ -1,7 +1,7 @@
 name = "QuantumTimes"
 uuid = "8747772e-c7e0-4110-92c5-e6bdb4ce5b89"
 authors = ["ttolppanen <taneli.tolppanen@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
