@@ -1,0 +1,4 @@
+name = "QuantumTimes"
+uuid = "8747772e-c7e0-4110-92c5-e6bdb4ce5b89"
+authors = ["ttolppanen <taneli.tolppanen@gmail.com>"]
+version = "0.1.0"
