@@ -11,14 +11,14 @@ using Plots
         y = intercept * exp.(slope * (x .+ rand(N)))
         r_int, r_slp, fit = exp_fit(x, y)
         pl = plot(x, y, st = :scatter, yaxis = :log10)
-        plot!(pl, x, fit)
+        plot!(pl, x, fit(x))
         savefig(joinpath(@__DIR__, "exp_fit"))
 
         r_int, r_slp, fit = exp_fit(x, y, intercept)
         pl = plot(x, y, st = :scatter, yaxis = :log10)
-        plot!(pl, x, fit)
+        plot!(pl, x, fit(x))
         savefig(joinpath(@__DIR__, "exp_fit_c"))
-        @test fit[1] == intercept
+        @test fit(x)[1] == intercept
         @test intercept == r_int
     end
 

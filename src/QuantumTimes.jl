@@ -27,7 +27,7 @@ function exp_fit(x, y, c = nothing)
         intercept = c
         slope = coef(model)[1]
     end
-    return intercept, slope, intercept * exp.(slope .* x)
+    return intercept, slope, x -> intercept * exp.(slope * x)
 end
 
 function t_time(x, y, c = nothing)
